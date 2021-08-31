@@ -13,3 +13,11 @@
 .margin-left{
     margin-right: 10px;
 }
+.download-btn{
+    border: 0;
+    border-radius: 5px;
+    padding: 7px 15px;
+    background-color: #E9AC04;
+    color: white;
+    margin-top: 20px;
+}

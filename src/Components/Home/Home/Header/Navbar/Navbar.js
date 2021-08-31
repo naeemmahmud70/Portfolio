@@ -6,8 +6,8 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div className="row">
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top t-0 nav-bg navbar-bg">
+        <div className="row sticky-top t-0">
+            <nav class="navbar navbar-expand-lg navbar-light  nav-bg navbar-bg">
                 <div class="container-fluid">
                     <h3 className="text-color fw-bold"><FontAwesomeIcon className="text-color" icon={faCode} /> Naeem</h3>
                     <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

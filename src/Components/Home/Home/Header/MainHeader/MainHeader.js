@@ -2,6 +2,8 @@ import React from 'react';
 import './MainHeader.css'
 import headerImg from '../../../../../images/header-image.png'
 import Typewriter from 'typewriter-effect';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 const MainHeader = () => {
     return (
@@ -13,13 +15,13 @@ const MainHeader = () => {
                     <div className="type-writer">
                         <Typewriter
                             options={{
-                                strings: ['Frontend Developer', 'React Developer', 'MERN-Stack Developer'],
+                                strings: ['I am a Frontend Developer', 'React Developer', 'MERN-Stack Developer'],
                                 autoStart: true,
                                 loop: true,
                             }}
                         />
                     </div>
-
+                    <a href="https://drive.google.com/file/d/13Ky3nsUPtlDc6naSlSldO9_7RiVNEvTp/view?usp=drivesdk" target="_blank"><button className="download-btn fw-bold">Download Resume <FontAwesomeIcon icon={faFileDownload} /> </button></a>
                 </div>
             </div>
             <div className="col-md-5 p-5">
