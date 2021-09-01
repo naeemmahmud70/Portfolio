@@ -1,11 +1,11 @@
 import React from 'react';
 import './About.css'
 import aboutImg from '../../../images/pic3.png'
-import js from "../../../images/index.png"
-import node from '../../../images/919825.png'
-import mongodb from '../../../images/images.png'
-import react from '../../../images/664-6644509_icon-react-js-logo-hd-png-download.png'
-import express from '../../../images/main-qimg-f406db5658b5d0dade4d70a989560439.png'
+import js from "../../../images/js.png"
+import node from '../../../images/nodejs.png'
+import mongodb from '../../../images/rsz_images.png'
+import react from '../../../images/react.png'
+import express from '../../../images/express.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPhoneAlt, faEnvelope, faHistory, faUserGraduate, faMapMarker } from '@fortawesome/free-solid-svg-icons';
 
@@ -37,12 +37,12 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="">
-                    <img className="stack-img" src={js} alt="" />
-                    <img className="stack-img" src={react} alt="" />
-                    <img className="stack-img" src={node} alt="" />
-                    <img className="stack-img" src={express} alt="" />
-                    <img className="stack-img" src={mongodb} alt="" />
+                <div className="d-flex justify-content-center">
+                    <div className="stack-img"><img className="img-fluid rounded" src={js} alt="" /></div>
+                    <div className="stack-img"><img className="img-fluid rounded" src={react} alt="" /></div>
+                    <div className="stack-img"><img className="img-fluid rounded" src={node} alt="" /></div>
+                    <div className="stack-img"><img className="img-fluid rounded" src={express} alt="" /></div>
+                    <div className="stack-img"><img className="img-fluid rounded" src={mongodb} alt="" /></div>
                 </div>
             </div>
         </div>
