@@ -1,0 +1,7 @@
+
+.form-bg{
+    background: linear-gradient(180deg, black, #1E2749), url(../../images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}

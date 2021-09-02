@@ -24,3 +24,7 @@
     background-color: #E9AC04;
     border-radius: 4px;
 }
+.navbar-style{
+    position: fixed;
+    top: 0;
+}

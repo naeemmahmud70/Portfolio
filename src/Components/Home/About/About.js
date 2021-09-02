@@ -11,9 +11,9 @@ import { faUser, faPhoneAlt, faEnvelope, faHistory, faUserGraduate, faMapMarker 
 
 const About = () => {
     return (
-        <div className="row about">
+        <section className="row about">
             <div className="col-md-5 p-5">
-                <img className="img-fluid p-5" src={aboutImg} alt="" />
+                <img className="img-fluid about-image" src={aboutImg} alt="" />
             </div>
             <div className="col-md-7 text-white px-5">
                 <h1 className="fw-bold text-color">ABOUT ME</h1>
@@ -45,7 +45,7 @@ const About = () => {
                     <div className="stack-img"><img className="img-fluid rounded" src={mongodb} alt="" /></div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

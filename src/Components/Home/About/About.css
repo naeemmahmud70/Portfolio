@@ -21,3 +21,12 @@
     height: 100px;
     width: 110px;
 }
+.about-image{
+    padding: 50px;
+}
+
+@media(max-width: 320px){
+    .about-image{
+        padding: 15px;
+    }
+}

@@ -14,10 +14,10 @@ const Skills = () => {
     const percentage2 = "TypeScript";
     const percentage3 = "Redux";
     return (
-        <div className="row skills pt-5">
+        <section className="row skills">
             <div className="d-flex justify-content-center">
                 <div className="text-center ">
-                    <h1 className="text-color fw-bold pt-5 ">MY SKILLS</h1>
+                    <h1 className="text-color fw-bold">MY SKILLS</h1>
                     <span className="animate-border"></span>
                 </div>
             </div>
@@ -139,7 +139,7 @@ const Skills = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 };
 

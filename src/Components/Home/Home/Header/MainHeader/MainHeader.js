@@ -7,7 +7,7 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 const MainHeader = () => {
     return (
-        <div className="row header">
+        <div className="row header mt-5">
             <div className="col-md-7 d-flex justify-content-center align-items-center p-5">
                 <div className="text-white">
                     <h3 className="text-white"><span><i>HI THERE</i></span></h3>

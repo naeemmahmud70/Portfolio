@@ -54,10 +54,10 @@ const Projects = () => {
     }]
 
     return (
-        <div className="row">
+        <section className="row">
             <div style={{ background: "#1E2749" }} className="d-flex justify-content-center">
-                <div className="text-center ">
-                    <h1 className="text-color fw-bold pt-5 ">MY SKILLS</h1>
+                <div className="text-center mb-3">
+                    <h2 className="text-color fw-bold pt-5 ">MY PROJECTS</h2>
                     <span className="animate-border"></span>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const Projects = () => {
                     projects.map(project => <ProjectCard project={project} key={project.id}></ProjectCard>)
                 }
             </div>
-        </div>
+        </section>
     );
 };
 
