@@ -3,7 +3,7 @@
     display: block;
     width: 215px;
     height: 4px;
-    background: red;
+    background: #E9AC04;
 }
   
 .animate-border:after {
@@ -43,3 +43,4 @@
 .skills{
     background-color: #1E2749;
 }
+
