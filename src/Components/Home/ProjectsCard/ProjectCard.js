@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ProjectsCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectCard = ({ project }) => {
     const { image, name, heading, description, preview, github } = project;
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
 
     return (
-        <div className="project-card d-flex flex-column justify-content-between rounded px-2">
+        <div data-aos="fade-up" className="project-card d-flex flex-column justify-content-between rounded px-2">
 
             <div>
                 <div className="">

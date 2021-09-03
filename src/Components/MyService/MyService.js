@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import responsive from '../../images/responsive-icon.png';
 import frontend from '../../images/frontend.png';
 import mern from '../../images/mern.png'
 import ServiceCard from '../ServiceCard/ServiceCard';
 
+
 const MyService = () => {
+
+  
+
     const services = [{
         id: 1,
         name: "Responsive Design",

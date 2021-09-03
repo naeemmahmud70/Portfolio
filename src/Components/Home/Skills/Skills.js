@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Skills.css'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
@@ -7,9 +7,15 @@ import vs from '../../../images/rsz_vscode.jpg';
 import git from '../../../images/rsz_git.png';
 import firebase from '../../../images/rsz_firebase.png';
 import heroku from '../../../images/rsz_heroku.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Skills = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
+
     const percentage1 = "SASS";
     const percentage2 = "TypeScript";
     const percentage3 = "Redux";
@@ -22,7 +28,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <div className="col-md-6 p-5">
+            <div data-aos="fade-right" className="col-md-6 p-5">
                 <div className="text-white">
                     <h3 className="text-color fw-bold">Frontend</h3>
                     <hr />
@@ -66,7 +72,7 @@ const Skills = () => {
 
             </div>
 
-            <div className="col-md-6 p-5">
+            <div data-aos="fade-left" className="col-md-6 p-5">
                 <div className="text-white">
                     <h3 className="text-color fw-bold">Familiar</h3>
                     <hr />

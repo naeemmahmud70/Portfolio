@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ServiceCard.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ServiceCard = ({ service }) => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
     return (
-        <div className="service-card rounded px-2">
+        <div data-aos="fade-up" className="service-card rounded px-2">
             <div className="bg-white">
                 <img className="project-img rounded" src={service.image} alt="" />
             </div>

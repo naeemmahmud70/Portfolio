@@ -4,8 +4,15 @@ import headerImg from '../../../../../images/header-image.png'
 import Typewriter from 'typewriter-effect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { useSpring, animated } from 'react-spring'
 
 const MainHeader = () => {
+    const styles = useSpring({
+        loop: { reverse: true },
+        from: { y: 0 },
+        to: { y: 15 },
+        delay: 400,
+    });
     return (
         <div className="row header mt-5">
             <div className="col-md-7 d-flex justify-content-center align-items-center p-5">
@@ -25,7 +32,10 @@ const MainHeader = () => {
                 </div>
             </div>
             <div className="col-md-5 p-5">
-                <img className="img-fluid" src={headerImg} alt="" />
+                <animated.div style={styles}>
+                    <img className="img-fluid" src={headerImg} alt="" />
+                </animated.div>
+
             </div>
         </div>
     );
